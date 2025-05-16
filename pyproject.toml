@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "nixeval"
-version = "0.1.0"
+version = "0.1.1"
 authors = [{name = "Ruben", email ="rubencanodiaz@gmail.com"}]
 description = "Read and write nix expressions in python"
 readme = "README.md"
