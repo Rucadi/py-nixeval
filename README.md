@@ -1,12 +1,12 @@
 # py-nixeval
 
-Python bindings for evaluating and round‑tripping Nix expressions, powered by \[snix\_eval] and \[PyO3].
+Python bindings for evaluating and round‑tripping Nix expressions into Python Values, powered by \[snix\_eval] and \[PyO3].
 
 ## Features
 
 * **Parse Nix expressions** into native Python objects.
 * **Serialize Python objects** to JSON then convert back into Nix values using
-* **Windows support** Nix is usually not seen in windows, but thanks to tvix/snix projects now you can use it on windows
+* **Windows/Linux/Mac support** Nix is usually not seen in windows, but thanks to tvix/snix projects now you can use it on windows as well as common platforms.
 * **Seamless round‑trip** between Nix and Python data structures.
 
 ## Limitations
@@ -17,7 +17,7 @@ The implementation internally relies on the python json module and on nix featur
 Install from PyPI:
 
 ```bash
-pip install py-nixeval
+pip install nixeval
 ```
 
 Or test it from source:
