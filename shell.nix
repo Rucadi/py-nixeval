@@ -14,6 +14,7 @@ pkgs.mkShell {
   shellHook = ''
     if [ ! -d .venv ]; then
       python -m virtualenv .venv
+      pip install pytest
     fi
     source .venv/bin/activate
   '';

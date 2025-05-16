@@ -50,7 +50,7 @@ fn dumps(py: Python, obj: PyObject) -> PyResult<String> {
     let json = py.import("json")?;
     let s: String = json.call_method1("dumps", (obj,))?.extract()?;
     let ns: NixValue = NixValue::from(s);
-    let obj = run_nix_query("builtins.fromJSON  (builtins.fromJSON builtins.input)", ns)
+    let obj = run_nix_query("builtins.fromJSON builtins.input", ns)
         .map_err(|e| PyValueError::new_err(format!("dictionary parsing error: {}", e)))?;
 
     Ok(obj)
