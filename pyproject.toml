@@ -1,6 +1,6 @@
 [build-system]
 requires = ["maturin>=1.0.0"]
-build-backend = "maturin.core.maturin"
+build-backend = "maturin"
 
 [project]
 name = "nixeval"
