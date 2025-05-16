@@ -6,7 +6,7 @@ build-backend = "maturin.core.maturin"
 name = "nixeval"
 version = "0.1.0"
 authors = [{name = "Ruben", email ="rubencanodiaz@gmail.com"}]
-description = "Read nix expressions in python"
+description = "Read and write nix expressions in python"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.7"
