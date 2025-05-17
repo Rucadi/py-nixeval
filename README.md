@@ -23,7 +23,7 @@ pip install nixeval
 Or test it from source:
 
 ```bash
-git clone https://github.com/yourusername/py-nixeval.git
+git clone https://github.com/rucadi/py-nixeval.git
 cd py-nixeval
 nix-shell
 maturin develop --release
